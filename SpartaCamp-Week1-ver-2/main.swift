@@ -135,7 +135,7 @@ func main() {
                                         if differencePrice <= myAccount {                           // 계좌의 잔액이 차액보다 많은 조건
                                             let newReservation = HotelInformation(roomNumber: newSelectedRoom.rawValue, checkInDate: newCheckInDate, checkOutDate: newCheckOutDate, roomPrice: newSelectedRoom.price)
                                             
-                                            reservationList[editIndex] = newReservation
+                                            reservationList[editIndex] = newReservation             // 기존 정보가 저장된 배열의 해당 인덱스를 새로운 예약 정보로 교체
                                             
                                             if differencePrice < 0 {
                                                 myAccount += differencePrice
